@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Whoa</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <form id="setup">
+          <h2>Tic Tac Whoa</h2>
+          <div class="form-field">
+            <label for="boardSize">Grid ?x?</label>
+            <input type="number" id="boardSize" value=3 min=3 max=7 step=1 required>
+          </div>
+          <div class="form-field">
+            <label>Symbols </label>
+            <input type="text" id="symbol0" value='X' maxlength=1 required>
+            <input type="text" id="symbol1" value='O' maxlength=1 required>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="Start new game">
+          </div>
+        </form>
+        <div class="prettydiv rightside"><div id="big-symbol">&nbsp;</div><span id="info">Win</span></div>
+      </div>
+
+    <!-- represents the gameboard -->
+    <div id="newBoard" class="game-board">
+
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="site.js" charset="utf-8"></script>
+  </body>
+</html>
