@@ -1,4 +1,4 @@
-# tic-tac-toe-whoa
+# Tic-Tac-Whoa
 
 Started in CoderCamps as random daily challenge to build interactive Tic-Tac-Toe board using HTML5 & CSS3
 
@@ -17,19 +17,19 @@ While considering the win conditions of the game, I realized any size board is d
 * Every cell in any row
 * Every cell in any column
 * Diagonal 1 "/"
-* Diagonal 2 "\"
+* Diagonal 2 "\\"
 
-For any size board, the number of ways to win = 2 * size + 2 so it grows linearly.
+For any size board, the number of ways to win = (2 * size + 2) so it grows linearly.
 
 Once the board was built & styled using the cell classes, a little Javascript with jQuery identified the target classes.
 As the players click the cells, a "marked" class is added and a single array of possible wins is updated.
-I also track the number of turns and alternate through the mark added to the cell.
+I also track the number of turns and alternate the mark added to the cell.
 
-Winning is easily identified when any win possibility for a single player reached the size of the board.
+Winning is easily identified when any win possibility for a single player reaches the size of the board.
 Once the program worked I improved the UI for adjusting the board size and changing the default marks.
 Since larger board sizes make it hard to see which mark is next, I added an inidicator.
-Another annoying aspect of playing on large boards is when winning is no longer possible before the game is over.
-Added a test for whether a win is possible by checking the win array for any line that is unplayed by one player.
+Another annoying aspect of playing on large boards is when winning is no longer possible before the board is filled.
+Added a test for whether a win is possible by checking for any win line that is unplayed by one player.
 Created more CSS to draw a line "through" the winning marks and integrated the game status into the UI.
 Lastly, I wanted to enable undoing a move to explore other outcomes. During the game, each move is pushed into an array.
 Good luck finding the secret place to click to undo the last move (even if the game is over)!
